@@ -66,3 +66,23 @@ header a:hover{
     /* background:url('../img/showcase.jpg') no-repeat; */
 
 }
+
+#showcase a{
+    color: black;
+    text-decoration: none;
+}
+
+#showcase a:hover{
+    text-decoration: underline;
+}
+
+/* Footer */
+footer{
+    padding: 16px;
+    margin-top: 16px;
+    text-align: center;
+}
+
+footer a{
+    color: black;
+}
