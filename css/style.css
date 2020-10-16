@@ -44,7 +44,7 @@ header li{
 
 header #branding h1{
     margin:0;
-    font-size: 64px;
+    font-size: 56px;
     font-weight: lighter;
 }
 
@@ -63,17 +63,30 @@ header a:hover{
 /* Showcase */
 #showcase{
     min-height: 400px;
-    /* background:url('../img/showcase.jpg') no-repeat; */
 
 }
 
 #showcase a{
     color: black;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 #showcase a:hover{
+    color: blue;
     text-decoration: underline;
+}
+
+#showcase h1{
+    float:left;
+}
+
+#showcase #link{
+    float:right;
+    padding-top: 16px;
+}
+
+#showcase p{
+    clear: both;
 }
 
 /* Footer */
@@ -85,4 +98,8 @@ footer{
 
 footer a{
     color: black;
+}
+
+footer a:hover{
+    color: blue;
 }
