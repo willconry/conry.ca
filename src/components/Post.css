@@ -3,6 +3,10 @@
     padding: 16px 0;
 }
 
+.post-container {
+    width: 640px;
+}
+
 .post h1 {
     padding: 16px 0;
     color:#333;
@@ -16,6 +20,10 @@
 
 .post p a {
     color: #444;
+}
+
+.post p a:hover {
+    color: blue;
 }
 
 .container {

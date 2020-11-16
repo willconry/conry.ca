@@ -9,7 +9,7 @@ function Post({
     return (
         <>
             <div className="post">
-                <div className="container">
+                <div className="post-container">
                     {html}
                 </div>
             </div>
