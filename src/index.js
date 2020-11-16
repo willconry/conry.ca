@@ -1,12 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './App';
 
-class Hello extends React.Component {
-  render() {
-    return <h2>Hi{this.props.greetings}!</h2>
-  }
-}
-
-const myelement = <Hello greetings=" werld" />;
-
-ReactDOM.render(myelement, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));

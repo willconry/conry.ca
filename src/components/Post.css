@@ -1,0 +1,23 @@
+.post {
+    background-color: snow;
+    padding: 16px 0;
+}
+
+.post h1 {
+    padding: 16px 0;
+    color:#333;
+    font-size: 1.5rem;
+}
+
+.post p {
+    padding: 8px 0;
+    color: #444;
+}
+
+.post p a {
+    color: #444;
+}
+
+.container {
+    width: 720px;
+}
