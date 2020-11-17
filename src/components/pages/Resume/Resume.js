@@ -4,8 +4,7 @@ import './Resume.css'
 
 function Resume() {
     // const url =  "https://cors-anywhere.herokuapp.com/https://github.com/willconry/resume/raw/master/will_conry_resume.pdf"
-    const url =  "https://cors-anywhere.herokuapp.com/https://conry.ca//will_conry_resume.pdf"
-    // const url =  "https://conry.ca//will_conry_resume.pdf"
+    const url =  "https://cors-anywhere.herokuapp.com/https://s3.ca-central-1.amazonaws.com/conry.ca/will_conry_resume.pdf"
 
 
   
