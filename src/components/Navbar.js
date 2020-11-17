@@ -29,7 +29,7 @@ function Navbar() {
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <a href="http://github.com/willconry" target="_blank" rel="noreferrer" className="nav-links" onClick={closeMobileMenu}>
+                            <a href="https://github.com/willconry" target="_blank" rel="noreferrer" className="nav-links" onClick={closeMobileMenu}>
                                 GitHub
                                 <FaExternalLinkAlt className='external-link-icon' />
                             </a>

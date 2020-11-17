@@ -1,14 +1,19 @@
 .post {
     background-color: snow;
     padding: 16px 0;
+    align-items: center;
+
 }
 
 .post-container {
     width: 640px;
+    align-self: center;
+    margin: auto;
+    padding: 16px 0;
 }
 
 .post h1 {
-    padding: 16px 0;
+    padding-bottom: 16px;
     color:#333;
     font-size: 1.5rem;
 }
@@ -28,4 +33,12 @@
 
 .container {
     width: 720px;
+}
+
+@media screen and (max-width: 720px) {
+    .post-container {
+        padding: 16px;
+        max-width: 100%;
+        width: 100%;
+    }
 }

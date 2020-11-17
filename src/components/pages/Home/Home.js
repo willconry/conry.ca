@@ -1,16 +1,13 @@
 import React from 'react'
 import Post from '../../Post'
-import { aboutMe, aboutMe2, aboutMe3, aboutSite, aboutSite3 } from './Data'
+import { aboutMe, aboutProjects, aboutSite } from './Data'
 
 function Home() {
     return (
         <>
             <Post {...aboutMe} />
-            <Post {...aboutSite} />            <Post {...aboutMe} />
-            <Post {...aboutSite} />
-            <Post {...aboutMe2} />
-            <Post {...aboutSite3} />
-            <Post {...aboutMe3} />
+            <Post {...aboutSite} />            
+            <Post {...aboutProjects} />
         </>
     )
 }
