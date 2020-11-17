@@ -1,0 +1,32 @@
+.resume {
+    background-color: snow; 
+    position: relative;  
+    justify-content: center;
+    z-index: 20;
+}
+
+.resume-container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+
+    /* width: 1080px; */
+    /* height: 1080px; */
+}
+
+.resume-preview {
+    max-width: 100%;
+    /* width: 100%; */
+}
+
+/* @media screen and (max-width: 720px) {
+    .resume {
+    }
+
+    .resume-container {
+    }
+
+    .resume-preview {
+    }
+
+} */
