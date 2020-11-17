@@ -1,8 +1,8 @@
 .resume {
     background-color: snow; 
     position: relative;  
-    z-index: -1; 
     justify-content: center;
+    z-index: 20;
 }
 
 .resume-container {
@@ -15,13 +15,18 @@
 }
 
 .resume-preview {
-    /* width: 1080px; */
     max-width: 100%;
-    width: 100%;
+    /* width: 100%; */
 }
 
-@media screen and (max-width: 720px) {
-    /* .resume {
-        todo
-    } */
-}
+/* @media screen and (max-width: 720px) {
+    .resume {
+    }
+
+    .resume-container {
+    }
+
+    .resume-preview {
+    }
+
+} */

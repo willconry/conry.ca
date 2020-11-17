@@ -34,7 +34,7 @@ export const aboutProjects = {
         <h1>Software Projects</h1>
         <p>
             My project section is also a work in progress. 
-            I am just beginning my career and I am looking for oppertunities to contribute to interseting projects.
+            I am just beginning my career and I am looking for opportunities to contribute to interesting projects.
         </p>
         </>
     )

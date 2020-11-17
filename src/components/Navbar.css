@@ -6,7 +6,9 @@
     font-size: 1.2em;
     position: sticky;
     top: 0;
-    /* z-index: 10; */
+    left: 0;
+    z-index: 100;
+    width: auto;
 }
 
 .navbar-container {
@@ -87,6 +89,9 @@
 
 @media screen and (max-width: 720px) {
 
+    .navbar-logo {
+        z-index: 100;
+    }
 
     .NavbarItems {
         position: relative;
@@ -103,7 +108,7 @@
         left: -100%;
         opacity: 1;
         transition: all 0.5s ease;
-        z-index: -1;
+        z-index: 90;
     }
   
     .nav-menu.active {
@@ -111,7 +116,7 @@
         left: 0;
         /* opacity: 1; */
         transition: all 0.6s ease;
-        z-index: -1;
+        z-index: 90;
     }
 
     .navbar-container {
@@ -136,6 +141,7 @@
     }
 
     .menu-icon {
+        z-index: 100;
         display: block;
         position: absolute;
         top: 16px;
@@ -146,7 +152,7 @@
         color: #333;
         transition: all .2s ease-in-out;
     }
-    
+
     .menu-icon:hover {
         transform: scale(1.1);
     }

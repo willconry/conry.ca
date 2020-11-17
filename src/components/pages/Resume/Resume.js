@@ -3,7 +3,11 @@ import { Document, Page, pdfjs } from 'react-pdf'
 import './Resume.css'
 
 function Resume() {
-    const url =  "https://cors-anywhere.herokuapp.com/https://github.com/willconry/resume/raw/master/will_conry_resume.pdf"
+    // const url =  "https://cors-anywhere.herokuapp.com/https://github.com/willconry/resume/raw/master/will_conry_resume.pdf"
+    const url =  "https://cors-anywhere.herokuapp.com/https://conry.ca//will_conry_resume.pdf"
+    // const url =  "https://conry.ca//will_conry_resume.pdf"
+
+
   
     pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`
     // const [numPages, setNumPages] = useState(null)
