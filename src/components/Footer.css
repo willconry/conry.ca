@@ -33,16 +33,14 @@
 }
 
 .social li {
-    transition: all .2s ease-in-out;
     padding-bottom: 4px;
-    /* position: relative; */
 }
 
-.social li:hover {
-    color: #444;
-    transform: scale(1.1);
+.social li a:hover {
+    color: #000;
 }
 .social li a {
+    transition: all .2s ease-in-out;
     color: #666;
     text-decoration: none;
 }
