@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { FaBars, FaExternalLinkAlt, FaTimes } from 'react-icons/fa'
 import './Navbar.css'
@@ -6,13 +6,25 @@ import './Navbar.css'
 function Navbar() {
 
     const [click, setClick] = useState(false)
-
     const handleClick = () => setClick(!click)
     const closeMobileMenu = () => setClick(false)
 
+    const [scroll, setScroll] = useState(false)
+    const handleScroll = () => {
+        if (window.pageYOffset > 16) {
+            if (!scroll) setScroll(true)
+        } else {
+            if (scroll) setScroll(false)
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+    })
+
     return (
         <>
-            <div className="navbar">
+            <div className={scroll ? "navbar scroll" : "navbar"}>
                 <div className="navbar-container">
                     <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
                         Will Conry

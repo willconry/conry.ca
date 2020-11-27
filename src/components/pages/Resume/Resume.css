@@ -8,7 +8,9 @@
 .resume-container {
     display: flex;
     justify-content: center;
-    margin: auto;
+    padding-top: 64px;
+    padding-bottom:64px;
+    /* margin: auto; */
 
     /* width: 1080px; */
     /* height: 1080px; */

@@ -28,6 +28,7 @@ function Footer() {
                 </div>
             </div>
         </div>
+        <div className="hide-bottom-shadow"></div>
         </>
     )
 }
