@@ -1,34 +1,30 @@
 .resume {
-    background-color: snow; 
-    position: relative;  
+    background-color: snow;  
+
+    display: flex;
     justify-content: center;
-    z-index: 20;
+    align-items: center;
+
+    overflow-x: auto;
 }
 
 .resume-container {
-    display: flex;
     justify-content: center;
-    padding-top: 64px;
-    padding-bottom:64px;
-    /* margin: auto; */
-
-    /* width: 1080px; */
-    /* height: 1080px; */
+    padding: 64px;
+    overflow: visible;
 }
 
 .resume-preview {
-    max-width: 100%;
-    /* width: 100%; */
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
 }
 
-/* @media screen and (max-width: 720px) {
+@media screen and (max-width: 840px) {
     .resume {
+        display: block;
     }
 
     .resume-container {
+        display: inline-block;
     }
 
-    .resume-preview {
-    }
-
-} */
+}
