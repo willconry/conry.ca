@@ -1,9 +1,24 @@
 .footer {
     background-color: white;
-    border-top-style: solid;
-    border-top-color: #ccc;
-    border-top-width: 1px;
-    justify-content: center;
+    box-shadow: 0 0 32px rgba(0, 0, 0, 0.5);
+    /* justify-content: center;
+    display: flex;
+    flex-direction: column; */
+
+    position: relative;
+    /* bottom: 0; */
+    z-index: 98;
+
+    margin: auto;
+    height: 100%;
+}
+
+.hide-bottom-shadow {
+    height: 64px;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    z-index: 99;
 }
 
 .footer-container {
