@@ -14,7 +14,7 @@ function Resume() {
             <div className="wrapper">
                 <div className="resume-container">
                     <Document file={url}> 
-                        <Page className="resume-preview" pageNumber={1} scale={1.5} /> 
+                        <Page className="resume-preview" pageNumber={1} width={840} /> 
                     </Document> 
                 </div>
             </div>
