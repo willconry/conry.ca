@@ -1,5 +1,5 @@
 import React from 'react'
-import './Post.css'
+// import './Post.scss'
 
 function Post({
     html

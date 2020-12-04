@@ -1,0 +1,26 @@
+$background-color: snow;
+
+$darkest-color: black;
+$dark-color: #333;
+$medium-color: #444;
+$light-color: #666;
+$lightest-color: white;
+
+$small-container: 640px;
+$medium-container: 720px;
+$large-container: 840px;
+
+$medium-spacer: 64px;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica', sans-serif;
+  }
+
+@import 'components/Navbar';
+@import 'components/Footer';
+@import 'components/Post';
+@import 'components/DisplayPage';
+@import 'components/Spacer';

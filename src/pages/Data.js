@@ -21,7 +21,7 @@ export const aboutSite = {
         <h1>About This Website</h1>
         <p>
             This website is meant to provide basic information about me and showcase my work. 
-            I made it from scratch using React and the source code is available <a href="https://github.com/willconry/conry.ca" target="_blank" rel="noreferrer">Here</a>.
+            I made it from scratch using React and the source code is available <a href="https://github.com/willconry/conry.ca" target="_blank" rel="noreferrer">here</a>.
             It is still a work in progress.
         </p>
         </>
@@ -35,6 +35,22 @@ export const aboutProjects = {
         <p>
             My project section is also a work in progress. 
             I am just beginning my career and I am looking for opportunities to contribute to interesting projects.
+        </p>
+        </>
+    )
+}
+
+export const resumeURL = {
+    // url: 'https://github.com/willconry/resume/raw/master/will_conry_resume.pdf'
+    url: 'https://s3.ca-central-1.amazonaws.com/conry.ca/will_conry_resume.pdf'
+}
+
+export const aboutResume = {
+    html: (
+        <>
+        <h1>The professional resume of Will Conry</h1>
+        <p>
+            Here is my resume, you can also view it directly and download it <a href="https://s3.ca-central-1.amazonaws.com/conry.ca/will_conry_resume.pdf" target="_blank" rel="noreferrer">here</a>.
         </p>
         </>
     )

@@ -1,0 +1,41 @@
+.post {
+    background-color: $background-color;
+    // padding: 16px 0;
+    align-items: center;
+}
+
+.post-container {
+    width: $small-container;
+    align-self: center;
+    margin: auto;
+    // padding: 16px 0;
+}
+
+.post h1 {
+    padding-bottom: 16px;
+    color: $dark-color;
+    font-size: 1.6em;
+}
+
+.post p {
+    padding: 8px 0;
+    color: $medium-color;
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+.post p a {
+    color: $medium-color;
+}
+
+.post p a:hover {
+    color: blue;
+}
+
+@media screen and (max-width: $medium-container) {
+    .post-container {
+        // padding: 16px;
+        max-width: 100%;
+        width: 100%;
+    }
+}

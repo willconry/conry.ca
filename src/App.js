@@ -1,9 +1,10 @@
-import './App.css';
+import './App.scss';
 import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import Home from './components/pages/Home/Home'
-import Resume from './components/pages/Resume/Resume';
+import Home from './pages/Home'
+import Resume from './pages/Resume';
 import Footer from './components/Footer'
+
 function App() {
   return (
     <Router>
