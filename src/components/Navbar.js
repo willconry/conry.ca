@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { FaBars, FaExternalLinkAlt, FaTimes } from 'react-icons/fa'
-import './Navbar.css'
 
 function Navbar() {
 

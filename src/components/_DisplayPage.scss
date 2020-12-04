@@ -1,5 +1,5 @@
-.resume {
-    background-color: snow;  
+.page {
+    background-color: $background-color;  
 
     display: flex;
     justify-content: center;
@@ -8,22 +8,22 @@
     overflow-x: auto;
 }
 
-.resume-container {
+.page-container {
     justify-content: center;
-    padding: 64px;
+    padding: $medium-spacer;
     overflow: visible;
 }
 
-.resume-preview {
+.page-preview {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
 }
 
-@media screen and (max-width: 840px) {
-    .resume {
+@media screen and (max-width: $large-container) {
+    .page {
         display: block;
     }
 
-    .resume-container {
+    .page-container {
         display: inline-block;
     }
 

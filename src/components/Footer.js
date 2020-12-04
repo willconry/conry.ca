@@ -1,15 +1,15 @@
 import React from 'react'
 import { FaRegEnvelope, FaGithub } from 'react-icons/fa'
-import './Footer.css'
 
 function Footer() {
     return (
         <>
+        <div className="footer-spacer"></div>
         <div className="footer">
             <div className="footer-container">
                 <div className="about">
                     <h1>Welcome</h1>
-                    <p>This is my website, Will Conry.</p>
+                    <p>This is my website. It isn't much but it's something.</p>
                 </div>
                 <div className="social">
                     <h1>Contact</h1>
@@ -28,7 +28,6 @@ function Footer() {
                 </div>
             </div>
         </div>
-        <div className="hide-bottom-shadow"></div>
         </>
     )
 }
