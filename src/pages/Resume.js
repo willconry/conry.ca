@@ -2,7 +2,7 @@ import React from 'react'
 import DisplayPage from '../components/DisplayPage'
 import Post from '../components/Post'
 import Spacer from '../components/Spacer'
-import { aboutResume, resumeURL } from './Data'
+import { aboutResume } from './Data'
 
 function Resume() {
 
@@ -10,7 +10,7 @@ function Resume() {
         <>
             <Spacer {...{height: 64}} />
             <Post {...aboutResume} />
-            <DisplayPage {...resumeURL} />
+            <DisplayPage {...{file: './will_conry_resume.pdf', page: 1}} />
         </>
     )
 }

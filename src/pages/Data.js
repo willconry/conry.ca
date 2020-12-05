@@ -40,17 +40,12 @@ export const aboutProjects = {
     )
 }
 
-export const resumeURL = {
-    // url: 'https://github.com/willconry/resume/raw/master/will_conry_resume.pdf'
-    url: 'https://s3.ca-central-1.amazonaws.com/conry.ca/will_conry_resume.pdf'
-}
-
 export const aboutResume = {
     html: (
         <>
         <h1>The professional resume of Will Conry</h1>
         <p>
-            Here is my resume, you can also view it directly and download it <a href="https://s3.ca-central-1.amazonaws.com/conry.ca/will_conry_resume.pdf" target="_blank" rel="noreferrer">here</a>.
+            Here is my resume, you can also view it directly and download it <a href="./will_conry_resume.pdf" download>here</a>.
         </p>
         </>
     )
