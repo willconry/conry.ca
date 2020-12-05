@@ -5,12 +5,14 @@ import Spacer from '../components/Spacer'
 import { aboutResume } from './Data'
 
 function Resume() {
-
     return (
         <>
             <Spacer {...{height: 64}} />
             <Post {...aboutResume} />
-            <DisplayPage {...{file: './will_conry_resume.pdf', page: 1}} />
+            <DisplayPage {...{
+                url: 'https://s3.ca-central-1.amazonaws.com/conry.ca/will_conry_resume.pdf', 
+                page: 1
+            }} />
         </>
     )
 }
