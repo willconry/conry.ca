@@ -3,7 +3,7 @@ import { Document, Page } from "react-pdf/dist/esm/entry.webpack";
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import resume from '../static/will_conry_resume.pdf';
 
-function DisplayPage({url, page}) {
+function DisplayPage({page}) {
     
     return (
         <>
