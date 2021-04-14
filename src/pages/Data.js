@@ -1,5 +1,3 @@
-import resume from '../static/will_conry_resume.pdf';
-
 export const aboutMe = {
     html: (      
         <> 
@@ -47,7 +45,7 @@ export const aboutResume = {
         <>
         <h1>The professional resume of Will Conry</h1>
         <p>
-            Here is my resume, you can also view it directly and download it <a href={resume} target="_blank" rel="noreferrer">here</a>.
+            Here is my resume, you can also view it directly and download it <a href={'/will_conry_resume.pdf'} target="_blank" rel="noreferrer">here</a>.
         </p>
         </>
     )
