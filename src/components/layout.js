@@ -1,44 +1,49 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.com/docs/use-static-query/
- */
-
 import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import { withStyles } from "@material-ui/styles"
-import { CssBaseline } from "@material-ui/core"
-// import "./layout.css"
+import { ThemeProvider, withStyles } from "@material-ui/styles"
+import { Box, CssBaseline, Grid } from "@material-ui/core"
 import Footer from "./footer"
+import theme from "../styles/theme"
 
 const styles = {
   root: {
-    background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+    // background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)",
+    // background: "#eee",
+    paddingTop: "94px",
   }
 }
 
 const Layout = ({ children, classes }) => {
+
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
         siteMetadata {
-          title
+          contact {
+            email
+            github
+          }
         }
       }
     }
   `)
 
- 
   return (
     <>
       <CssBaseline />
-      <div className={classes.root}>
-        <main>{children}</main>
-        <Footer />
-      </div>
+      <Grid alignItems="stretch" container justify="center" spacing={0}>
+        <Grid item xs={12}>
+          <ThemeProvider theme={theme}>
+            <Box className={classes.root} bgcolor="background.default">
+              <main>{children}</main>
+              <Footer email={data.site.siteMetadata.contact?.email}
+                      github={data.site.siteMetadata.contact?.github} />
+            </Box>
+          </ThemeProvider>
+        </Grid>
+      </Grid>
     </>
   )
 }

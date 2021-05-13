@@ -3,6 +3,10 @@ module.exports = {
     title: `William Conry`,
     description: `The personal website of William Conry.`,
     author: `Will Conry`,
+    contact: {
+      email: "will@conry.ca",
+      github: "willconry",
+    },
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
