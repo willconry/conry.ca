@@ -9,10 +9,18 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
-import "./layout.css"
+import { withStyles } from "@material-ui/styles"
+import { CssBaseline } from "@material-ui/core"
+// import "./layout.css"
+import Footer from "./footer"
 
-const Layout = ({ children }) => {
+const styles = {
+  root: {
+    background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+  }
+}
+
+const Layout = ({ children, classes }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -23,26 +31,13 @@ const Layout = ({ children }) => {
     }
   `)
 
+ 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
+      <CssBaseline />
+      <div className={classes.root}>
         <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `2rem`,
-          }}
-        >
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
+        <Footer />
       </div>
     </>
   )
@@ -50,6 +45,7 @@ const Layout = ({ children }) => {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  classes: PropTypes.object.isRequired,
 }
 
-export default Layout
+export default withStyles(styles)(Layout)
