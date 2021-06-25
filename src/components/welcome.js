@@ -33,10 +33,10 @@ const Welcome = ({ classes }) => {
             <Typography variant="h4">
                 The personal website of
             </Typography>
-            <Typography variant="h1" align="center">
+            <Typography variant="h1">
                 {data.site.siteMetadata.title}
             </Typography>
-            <Typography variant="h4" align="right">
+            <Typography variant="h4">
                 Welcome
             </Typography>
             {/* </Box> */}

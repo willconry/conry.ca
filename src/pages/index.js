@@ -13,7 +13,7 @@ const IndexPage = () => (
 
     <Welcome />
 
-    <Tabs />
+    {/* <Tabs /> */}
 
   </Layout>
 )
